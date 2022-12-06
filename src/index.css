@@ -1,13 +1,159 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+section {
+  margin: 2rem 1rem 0 ;
+
+}
+.contruls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+input {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(146, 48, 237);
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  font-size: 1rem;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(231, 229, 229);
+
+}
+.go-search-button{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}.serch-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nutrients ul {
+  display: flex;
+  width: 35rem;
+  justify-content: space-evenly;
+}
+ul {
+  list-style: none;
+}
+.meals {
+  display: flex;
+}
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.input-find{
+  justify-content: center;
+  display: flex;
+}
+.images{
+  width: 20rem;
+  border-radius: 1rem ;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+  padding: 2rem;
+  margin: 0 1rem;
+  
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+}
+.items{
+  display: flex ;
+  flex: 1;
+  min-height: 0px;
+  overflow-x: scroll;
+}
+
+.items::-webkit-scrollbar{
+   display: none  ;
+  
+}
+.item{
+  flex-direction: column;
+  max-width: 50%;
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+}
+.instuctions {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+  background-color: rgb(169, 172, 168);
+  color: white;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  content: none;
+}
+a:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+@media only screen and (max-width : 550px ){
+  .meals {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nutrients ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+  }
+}
+.title-menu{
+  color: rgb(31, 29, 29);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-size:large;
+}
+.servings{
+  padding-top: 1rem;
 }
