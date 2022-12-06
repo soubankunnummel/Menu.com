@@ -52,7 +52,7 @@ function Menu() {
             <form action="search" onSubmit={onSubmit} >
 
                <div className='input-find'> <input  type="text"
-                    placeholder='shearch your item...'
+                    placeholder='search your item...'
                     onChange={(e) => setSearch(e.target.value)} />
                 </div>
 
